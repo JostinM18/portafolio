@@ -1,0 +1,129 @@
+---
+const skills = [
+  "Proyectos en Arduino 1",
+  "Python",
+  "Framework Django",
+  "HTML",
+  "Me destaco en el deporte ",
+];
+
+const projects = [
+];
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portafolio de Jostin</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        color: #e0e0e0;
+      }
+
+      header {
+        background-color: #141e30;
+        padding: 2rem;
+        text-align: center;
+        border-bottom: 2px solid #2c5364;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: #00c6ff;
+      }
+
+      .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        gap: 2rem;
+        align-items: flex-start;
+      }
+
+      .profile-img {
+        flex: 0 0 220px;
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 3px solid #00c6ff;
+        box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+      }
+
+      .info-section {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      h2 {
+        color: #00c6ff;
+        margin-top: 1.5rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      .project-card {
+        background-color: #1c1c1c;
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 5px rgba(255,255,255,0.05);
+      }
+
+      .project-card a {
+        color: #00c6ff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .project-card a:hover {
+        text-decoration: underline;
+      }
+
+      a {
+        color: #00c6ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Est. Jostin Morales💻</h1>
+    </header>
+
+    <div class="main-content">
+      <img src="/portafolio.jpeg" alt="Jostin" class="profile-img" />
+
+      <div class="info-section">
+        <h2>👨‍💻 Sobre mí</h2>
+        <p>
+          Soy Jostin Morales, estudio en la Unidad Educatia Alessandro Volta. Estoy estudiando la carrera de informática, vivo en la Coop.Santa Martha Sector 5,me gusta la programación,además soy deportista, entreno y trabajo.
+        </p>
+        <p><strong>Objetivos:</strong></p>
+        <ul>
+          <li>Mejorar mis habilidadesy técnicas en deporte.</li>
+          <li>Introducirme al campo laboral para adquirir conocimientos.</li>
+          <li>Aprender más de programación.</li>
+        </ul>
+
+        <h2>🧠 Habilidades</h2>
+        <ul>
+          {skills.map(skill => <li>{skill}</li>)}
+		</ul>
+
+        <h2>📬 Contacto</h2>
+        <ul>
+          <li>Email: <a href="mailto:jostinmorales602@gmail.com">jostinmorales602@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/JostinM18" target="_blank">github.com/JostinM18</a></li>
+	      <li>Contacto: <a href="tel:0999290142">0959100274</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
